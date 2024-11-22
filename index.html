@@ -14,7 +14,7 @@
     <nav class="navbar">
         <ul>
             <li><a href="#menu">Menu</a></li>
-            <li><a href="#deals">Deals</a></li>
+            <li><a href="#menu">Deals</a></li>
             <li><a href="#resturants">Resturents</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -33,7 +33,7 @@
             <div><p>The first outlet of Vaango opened in NOIDA in 2011 and is focused on the authentic taste and quality South Indian vegetarian food offerings. It has opened over 70 stores in India.</p></div>
         </div>
     </div>
-    <div class="lower-hero-1"><img src="assets/idli.png"><img src="assets/pizza.png"><img src="assets/DOSA.png"><img src="assets/deals.png"><img src="assets/location.png"><img src="assets/Frame 13.png"></div>
+    <div class="lower-hero-1"><img src="assets/idli.png"><img src="assets/pizza.png"><img src="assets/DOSA.png" id="menu"><img src="assets/deals.png"><img src="assets/location.png" id="resturants"><img src="assets/Frame 13.png" id="contact"></div>
     <footer>
         <ul>
             <li><a href="#about">About</a></li>
@@ -44,4 +44,14 @@
         </ul>
     </footer>
 </body>
+<script>const slider = document.querySelector('#menu');
+
+    slider.addEventListener('mouseover', () => {
+        slider.style.animationPlayState = 'paused';
+    });
+    
+    slider.addEventListener('mouseout', () => {
+        slider.style.animationPlayState = 'running';
+    });
+    </script>
 </html>
